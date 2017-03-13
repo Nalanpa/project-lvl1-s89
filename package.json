@@ -1,0 +1,19 @@
+{
+  "name": "project-lvl1-s89",
+  "version": "1.0.0",
+  "description": "First my project on Hexlet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nalanpa/project-lvl1-s89.git"
+  },
+  "author": "Alan Nosenkis (nalanpa@yandex.ru)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nalanpa/project-lvl1-s89/issues"
+  },
+  "homepage": "https://github.com/Nalanpa/project-lvl1-s89#readme"
+}
