@@ -1,6 +1,6 @@
 {
   "name": "project-first-nalanpa",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "First my project on Hexlet",
   "main": "dist/index.js",
   "bin": {
