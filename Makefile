@@ -7,4 +7,7 @@ start:
 publish:
 	npm publish
 
-.PHONY: install publish 
+lint:
+	npm run eslint -- src
+
+.PHONY: install publish

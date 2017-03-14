@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/Nalanpa/project-lvl1-s89#readme",
   "dependencies": {
-    "gulp": "*"
+    "gulp": "*",
+    "readline-sync": "*"
   },
   "devDependencies": {
     "debug": "*",
@@ -44,7 +45,6 @@
     "eslint-plugin-import": "*",
     "flow-bin": "^0.37",
     "flow-typed": "*",
-    "jest": "^18",
-    "readline-sync": "*"
+    "jest": "^18"
   }
 }
