@@ -1,8 +1,8 @@
 {
   "name": "project-first-nalanpa",
-  "version": "1.0.1",
+  "version": "0.1.2",
   "description": "First my project on Hexlet",
-  "main": "index.js",
+  "main": "dist/index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
