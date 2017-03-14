@@ -1,6 +1,6 @@
 {
   "name": "project-first-nalanpa",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "First my project on Hexlet",
   "main": "dist/index.js",
   "bin": {
@@ -44,6 +44,7 @@
     "eslint-plugin-import": "*",
     "flow-bin": "^0.37",
     "flow-typed": "*",
-    "jest": "^18"
+    "jest": "^18",
+    "readline-sync": "*"
   }
 }
