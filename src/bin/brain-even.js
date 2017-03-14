@@ -9,6 +9,7 @@ const userName = readlineSync.question('May I have your name? ');
 
 console.log(`Hello, ${userName}!\n`);
 
+
 const askQuestion = () => {
   const question = Math.floor(Math.random() * 100);
   const correctAnswer = (question % 2 === 0) ? 'yes' : 'no';
