@@ -7,7 +7,14 @@
     "brain-games": "dist/bin/brain-games.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "babel-node": "babel-node",
+    "flow": "flow",
+    "flow-typed": "flow-typed",
+    "gulp": "gulp",
+    "eslint": "eslint",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -19,15 +26,24 @@
     "url": "https://github.com/Nalanpa/project-lvl1-s89/issues"
   },
   "homepage": "https://github.com/Nalanpa/project-lvl1-s89#readme",
+  "dependencies": {
+    "gulp": "*"
+  },
   "devDependencies": {
+    "debug": "*",
     "babel-cli": "*",
     "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-plugin-transform-runtime": "*",
     "babel-preset-env": "*",
-    "babel-preset-stage-0": "*"
-  },
-  "scripts": {
-    "babel-node": "babel-node",
-    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "prepublish": "npm run build"
+    "babel-preset-flow": "*",
+    "babel-preset-stage-0": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-flowtype": "*",
+    "eslint-plugin-import": "*",
+    "flow-bin": "^0.37",
+    "flow-typed": "*",
+    "jest": "^18"
   }
 }

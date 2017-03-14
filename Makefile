@@ -7,4 +7,4 @@ start:
 publish:
 	npm publish
 
-.PHONY: install publish start
+.PHONY: install publish 
