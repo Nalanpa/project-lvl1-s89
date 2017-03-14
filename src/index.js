@@ -1,4 +1,4 @@
 
-import askName from './askname';
+import readlineSync from 'readline-sync';
 
-export default askName;
+export default readlineSync;

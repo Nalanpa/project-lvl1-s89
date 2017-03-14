@@ -2,7 +2,7 @@ install:
 	npm install
 
 start:
-	npm run babel-node -- 'src/bin/brain-games.js'
+	npm run babel-node -- 'src/bin/brain-even.js'
 
 publish:
 	npm publish
@@ -10,4 +10,8 @@ publish:
 lint:
 	npm run eslint -- src
 
-.PHONY: install publish
+build:
+	rm -rf dist
+	npm run build
+
+.PHONY: install start publish lint build

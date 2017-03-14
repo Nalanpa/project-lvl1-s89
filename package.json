@@ -1,10 +1,11 @@
 {
   "name": "project-first-nalanpa",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "First my project on Hexlet",
   "main": "dist/index.js",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "scripts": {
     "test": "jest",
