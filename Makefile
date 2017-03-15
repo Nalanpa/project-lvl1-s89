@@ -16,6 +16,9 @@ gcd:
 balance:
 	npm run babel-node -- 'src/bin/brain-balance.js'
 
+progression:
+	npm run babel-node -- 'src/bin/brain-progression.js'
+
 publish:
 	npm publish
 
@@ -26,4 +29,4 @@ build:
 	rm -rf dist
 	npm run build
 
-.PHONY: install start publish lint build even calc gcd balance
+.PHONY: install start publish lint build even calc gcd balance progression
