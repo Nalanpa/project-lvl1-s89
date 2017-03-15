@@ -30,10 +30,10 @@
   "homepage": "https://github.com/Nalanpa/project-lvl1-s89#readme",
   "dependencies": {
     "gulp": "*",
-    "readline-sync": "*"
+    "readline-sync": "*",
+    "hexlet-pairs": "^0.1.4"
   },
   "devDependencies": {
-    "debug": "*",
     "babel-cli": "*",
     "babel-core": "*",
     "babel-eslint": "*",
@@ -41,6 +41,7 @@
     "babel-preset-env": "*",
     "babel-preset-flow": "*",
     "babel-preset-stage-0": "*",
+    "debug": "*",
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
     "eslint-plugin-flowtype": "*",
