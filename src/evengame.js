@@ -25,8 +25,9 @@ export default () => {
 
   const quiz = () => {
     let correct = true;
+    const questionsCount = 3;
 
-    for (let i = 1; i <= 3; i += 1) {
+    for (let i = 1; i <= questionsCount; i += 1) {
       if (!askQuestion()) {
         correct = false;
         break;
