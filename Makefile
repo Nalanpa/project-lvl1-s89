@@ -13,6 +13,9 @@ even:
 gcd:
 	npm run babel-node -- 'src/bin/brain-gcd.js'
 
+balance:
+	npm run babel-node -- 'src/bin/brain-balance.js'
+
 publish:
 	npm publish
 
@@ -23,4 +26,4 @@ build:
 	rm -rf dist
 	npm run build
 
-.PHONY: install start publish lint build even calc gcd
+.PHONY: install start publish lint build even calc gcd balance
