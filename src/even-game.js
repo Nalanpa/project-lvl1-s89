@@ -1,13 +1,8 @@
 import readlineSync from 'readline-sync';
+import greeting from './greeting';
 
 export default () => {
-  console.log('Welcome to the Brain Games!',
-    '\nAnswer "yes" if number even otherwise answer "no".\n');
-
-  const userName = readlineSync.question('May I have your name? ');
-
-  console.log(`Hello, ${userName}!\n`);
-
+  const userName = greeting('Answer "yes" if number even otherwise answer "no".');
 
   const askQuestion = () => {
     const question = Math.floor(Math.random() * 100);
