@@ -18,9 +18,9 @@ const task = () => {
   const maxNumber = 1000;
   const num = Math.floor(Math.random() * maxNumber);
 
-  const isNumPrime = (isPrime(num)) ? 'yes' : 'no';
+  const answer = (isPrime(num)) ? 'yes' : 'no';
 
-  return cons(num, isNumPrime);
+  return cons(num, answer);
 };
 
 export default () => {
