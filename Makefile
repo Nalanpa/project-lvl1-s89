@@ -19,6 +19,9 @@ balance:
 progression:
 	npm run babel-node -- 'src/bin/brain-progression.js'
 
+prime:
+	npm run babel-node -- 'src/bin/brain-prime.js'
+
 publish:
 	npm publish
 
@@ -29,4 +32,4 @@ build:
 	rm -rf dist
 	npm run build
 
-.PHONY: install start publish lint build even calc gcd balance progression
+.PHONY: install start publish lint build even calc gcd balance progression prime
