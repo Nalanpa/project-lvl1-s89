@@ -1,42 +1,44 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
-import greeting from './greeting';
+import greet from './greet';
 
 
-const isPassed = (task) => {
-  const newTask = task();
+const askQuestion = (makeTask) => {
+  const newTask = makeTask();
   const taskQuestion = car(newTask);
-  const correct = String(cdr(newTask));
+  const correctAnswer = String(cdr(newTask));
   const userAnswer = readlineSync.question(`Question: ${taskQuestion}\nYour answer: `);
 
-  if (userAnswer !== correct) {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correct}'.\n`);
-    return false;
+  if (userAnswer !== correctAnswer) {
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\n`);
+    return 'failed';
   }
 
   console.log('Correct!');
-  return true;
+  return 'passed';
 };
 
-const isAllPassed = (task) => {
+const isAllPassed = (makeTask) => {
   const questionsCount = 3;
 
-  let correct = true;
+  let passed = true;
+  let result;
   for (let i = 1; i <= questionsCount; i += 1) {
-    if (!isPassed(task)) {
-      correct = false;
+    result = askQuestion(makeTask);
+    if (result !== 'passed') {
+      passed = false;
       break;
     }
   }
-  return correct;
+  return passed;
 };
 
 // ////////////////////////////////////////////////////
 
-export default (greetingString, task) => {
-  const userName = greeting(greetingString);
+export default (greetingString, makeTask) => {
+  const userName = greet(greetingString);
 
-  if (isAllPassed(task)) {
+  if (isAllPassed(makeTask)) {
     console.log(`Congratulations, ${userName}!\n`);
   } else {
     console.log(`Let's try again, ${userName}!\n`);

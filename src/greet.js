@@ -1,9 +1,9 @@
-import readlineSync from 'readline-sync';
+import readlineSync from './';
 
-export default (gameTask) => {
+export default (greetingString) => {
   console.log('Welcome to the Brain Games!');
-  if (!(gameTask === undefined)) {
-    console.log(gameTask);
+  if (!(greetingString === undefined)) {
+    console.log(greetingString);
   }
 
   const userName = readlineSync.question('\nMay I have your name? ');

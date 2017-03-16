@@ -14,17 +14,17 @@ const isPrime = (n) => {
   return true;
 };
 
-const task = () => {
+const makeTask = () => {
   const maxNumber = 1000;
   const num = Math.floor(Math.random() * maxNumber);
 
-  const answer = (isPrime(num)) ? 'yes' : 'no';
+  const correctAnswer = (isPrime(num)) ? 'yes' : 'no';
 
-  return cons(num, answer);
+  return cons(num, correctAnswer);
 };
 
 export default () => {
   const greetingString = 'Answer "yes" if number prime otherwise answer "no".';
 
-  gameStart(greetingString, task);
+  gameStart(greetingString, makeTask);
 };

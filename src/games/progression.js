@@ -2,7 +2,7 @@ import { cons } from 'hexlet-pairs';
 import gameStart from '../game';
 
 
-const task = () => {
+const makeTask = () => {
   const progLength = 10;
   const init = Math.floor(Math.random() * 100);
   const diff = Math.floor(Math.random() * 10);
@@ -21,5 +21,5 @@ const task = () => {
 export default () => {
   const greetingString = 'What number is missing in this progression?';
 
-  gameStart(greetingString, task);
+  gameStart(greetingString, makeTask);
 };

@@ -21,7 +21,7 @@ const balance = (num) => {
 };
 
 
-const task = () => {
+const makeTask = () => {
   const maxNumber = 10000;
   const num = Math.floor(Math.random() * maxNumber);
   const balanced = balance(num);
@@ -32,5 +32,5 @@ const task = () => {
 
 export default () => {
   const greetingString = 'Balance the given number.';
-  gameStart(greetingString, task);
+  gameStart(greetingString, makeTask);
 };

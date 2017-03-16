@@ -2,7 +2,7 @@ import { cons } from 'hexlet-pairs';
 import gameStart from '../game';
 
 
-const task = () => {
+const makeTask = () => {
   const num1 = Math.floor(Math.random() * 100);
   const num2 = Math.floor(Math.random() * 100);
 
@@ -32,5 +32,5 @@ const task = () => {
 export default () => {
   const greetingString = 'What is the result of the expression?';
 
-  gameStart(greetingString, task);
+  gameStart(greetingString, makeTask);
 };

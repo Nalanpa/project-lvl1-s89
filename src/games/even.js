@@ -2,15 +2,15 @@ import { cons } from 'hexlet-pairs';
 import gameStart from '../game';
 
 
-const task = () => {
+const makeTask = () => {
   const num = Math.floor(Math.random() * 100);
-  const isEven = (num % 2 === 0) ? 'yes' : 'no';
-  return cons(num, isEven);
+  const correctAnswer = (num % 2 === 0) ? 'yes' : 'no';
+  return cons(num, correctAnswer);
 };
 
 
 export default () => {
   const greetingString = 'Answer "yes" if number even otherwise answer "no".';
 
-  gameStart(greetingString, task);
+  gameStart(greetingString, makeTask);
 };
